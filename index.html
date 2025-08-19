@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="https://pages.github.com/">Referência</a>
+            </li>
+            <li>
+                <a href="https://www.w3schools.com/sql/">Referência</a>
+            </li>
+            <li>
+                <a href="https://www.db-fiddle.com/">Referência</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div class="center">
+            <img src="./img/sql.jpg" id="foto-principal">
+        </div>
+        <h1>SQL</h1>
+        <h2>Página Web</h2>
+    </header>
+    <main>
+        <section>
+            <h3>O que é DCL?</h3>
+            <p>
+                No âmbito da Linguagem de Consulta Estruturada (SQL), a Linguagem de Controle de Dados (DCL) desempenha um papel fundamental na administração de bancos de dados, gerenciando os direitos de acesso e as permissões dos usuários. Esses comandos são os guardiões do banco de dados, garantindo que os usuários tenham acesso apenas aos dados que estão autorizados a visualizar e manipular. Os três comandos principais que constituem a DCL são GRANT, DENY e REVOKE
+            </p>
+        </section>
+    </main>
+    <main>
+        <section>
+            <h3>GRANT</h3>
+            <p>
+                Este comando é usado para atribuir privilégios específicos a usuários ou funções, permitindo que executem determinadas ações em objetos do banco de dados
+Exemplo
+A equipe da recepção precisa visualizar os dados dos pacientes e agendar novas consultas. No entanto, eles não devem ter acesso aos diagnósticos e prescrições.
+            </p>
+            <p>
+                Exemplo de Código SQL 
+            </p>
+            <img  src="img/marcos.png" alt="" style="width:1000px;height:80px;">
+            <p>
+                A primeira instrução GRANT permite que o usuário recepcionista execute o comando SELECT em todos os campos da tabela Pacientes.
+            </p>
+            <p>
+                A segunda instrução é mais restritiva: ela concede a permissão de INSERT apenas nas colunas id_paciente, id_medico e data_consulta da tabela Consultas. Além disso, permite que o recepcionista visualize (SELECT) apenas essas mesmas colunas, protegendo as informações sensíveis de diagnostico e prescricao.
+            </p>
+    <main>
+        <section>
+            <h3>REVOKE</h3>
+            <p>
+                O comando REVOKE é o oposto do GRANT. Ele remove permissões que foram previamente concedidas a um usuário.
+            </p>
+            <img href ="center" src="img/ion.png" alt="" style="width:800px;height:150px;">
+        </section>
+    </main>
+    <main>
+        <section>
+            <h3>DENY</h3>
+            <p>
+                O comando DENY é usado para negar explicitamente uma permissão a um usuário. A principal diferença entre REVOKE e DENY é que o DENY tem precedência sobre as permissões concedidas. Se um usuário pertence a um grupo que tem uma permissão GRANT, mas o usuário individualmente tem um DENY para a mesma permissão, o acesso será negado.
+
+            </p>
+            <img href="center" src="img/uvo.png" alt="" style="width:800px;height:200px;">
+        </section>
+    </main>
+    <main>
+        <section>
+            <h3>Dados Do MySQL</h3>
+            <p>
+                O MySQL, um dos sistemas de gerenciamento de banco de dados relacional mais populares do mundo, oferece uma rica variedade de tipos de dados para armazenar diferentes tipos de informação de forma eficiente.
+
+            </p>
+            <p>
+            Exemplo Código SQL
+            </p>
+            <img href="center" src="img/peito.png" alt="" style="width:800px;height:200px;">
+            <p>
+                Tipos de Dados de String (Texto)
+            </p>
+            <img href="center" src="img/olho.png" alt="" style="width:800px;height:380px;">
+        </section>
+    </main>
+    <main>
+        <section>
+            <p>
+                As funções agregadas em SQL servem para resumir ou consolidar informações em vez de mostrar cada linha individualmente, quais são elas?
+            </p>
+            <h3>AVG</h3>
+            <p> 
+                Calcula a média dos valores de uma coluna numérica.
+            </p>
+            <h3>COUNT</h3>
+            <p>
+                Faz a contagem de linhas (ou valores não nulos de uma coluna).
+            </p>
+            <h3>MAX</h3>
+            <p>
+                Retorna o maior valor de uma coluna.
+            </p>
+            <h3>MIN</h3>
+            <p>
+                Retorna o menor valor de uma coluna.
+            </p>
+            <h3>SUM</h3>
+            <p>
+                Faz a soma de todos os valores de uma coluna numérica.
+            </p>
+            <img href="center" src="img/unnamed.png" alt="" style="width:800px;height:380px;">
+        </section>
+    </main>
+    <main>
+        <section>
+            <h3>DDL</h3>
+            <p>
+                É uma parte fundamental da linguagem SQL, usada para definir, modificar e apagar a estrutura de um banco de dados. 
+            </p>
+            <h3>CREATE:</h3>
+            <p>
+                O comando CREATE é usado para criar novos objetos em um banco de dados, como tabelas, índices, visualizações (views) e esquemas (schemas).
+
+            </p>
+            <img href="center" src="img/lindo.png" alt="" style="width:430px;height:200px;">
+            <h3>DROP</h3>
+            <p>
+                O comando DROP é usado para apagar objetos de um banco de dados. Use com extrema cautela, pois a operação é irreversível e apaga o objeto e todos os dados contidos nele
+            </p>
+            <img href="center" src="img/eu.png" alt="" style="width:600px;height:400px;">
+            <h3>ALTER</h3>
+            <p>
+                O comando ALTER é usado para modificar a estrutura de um objeto de banco de dados que já existe. 
+
+            </p>
+            <img href="center" src="img/animal.png" alt="" style="width:600px;height:400px;">
+            
+        </section>
+    </main>
+
+
+
+    <main>
+        <section>
+            <h3>DML</h3>
+            <p>
+Data Manipulation Language (DML ) - A Data Manipulation Language é o sub idioma responsável pela adição, edição ou exclusão de dados de um banco de dados. A Linguagem de Manipulação de Dados, ou DML , é
+ o grupo de comandos responsáveis pela manipulação de dados em um banco de dados; isto geralmente implica em inserir, editar ou excluir linhas em tabelas SQL.
+            </p>
+
+            <h3>MODELO DE BANCO DE DADOS</h3>
+            <img href="center" src="img/juju.png" alt="" style="width:800px;height:300px;">   
+        </section>
+    </main>
+    <main>
+        <section>
+            <h3>INSERT</h3>
+            <p>
+                Usado para adicionar novos registros a uma tabela.
+                A palavra-chave INTO é usada para deixar claro que você está direcionando a operação de inserção para uma tabela específica. O INTO é só uma palavra que ajuda a mostrar que você está falando sobre a tabela onde os dados vão entrar. É como dizer "colocar na tabela".
+                
+            </p>
+            <img href="center" src="img/loco.png" alt="" style="width:800px;height:200px;">
+        </section>
+    </main>
+    <main>
+        <section>
+            <h3>UPDATE</h3>
+            <p>
+                Usado para modificar registros existentes em uma tabela
+
+            </p>
+            <img href="center" src="img/update.png" alt="" style="width:400px;height:100px;">
+        </section>
+    </main>
+    <main>
+        <section>
+            <h3>DELETE</h3>
+            <p>
+                Usado para remover registros de uma tabela 
+            </p>
+            <img href="center" src="img/delete.png" alt="" style="width:400px;height: 50px;">
+        </section>
+    </main>
+    <main>
+        <section>
+            <h3>SELECT</h3>
+            <p>
+                Usado para consultar e recuperar dados de uma ou mais tabelas.
+
+            </p>
+            <img href="center" src="img/select.png" alt="" style="width:400px;height:200px;">
+        </section>
+    </main>
+
+</body>
+</html>
